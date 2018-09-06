@@ -14,7 +14,7 @@ $subtraction = new \App\mathleite\Operation\Subtraction(10, 4, 2);
 $resultSubtraction = $subtraction->operation();
 
 
-$division = new \App\mathleite\Operation\Division(87.15, 3);
+$division = new \App\mathleite\Operation\Division(87.15, 0);
 $resultDivision = $division->operation();
 
 $multiplication = new \App\mathleite\Operation\Multiplication(2.4, 2, 2, 2 );

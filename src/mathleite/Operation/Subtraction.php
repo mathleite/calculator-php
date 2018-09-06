@@ -7,7 +7,7 @@
  */
 
 namespace App\mathleite\Operation;
-class Subtraction
+class Subtraction extends AbstractOperation
 {
 	private $arrayNumber;
 	public function __construct(float ...$arrayNumber)

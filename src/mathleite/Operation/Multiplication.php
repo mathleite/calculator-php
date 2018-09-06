@@ -8,7 +8,7 @@
 
 namespace App\mathleite\Operation;
 
-class Multiplication
+class Multiplication extends AbstractOperation
 {
 	private $arrayNumber;
 	public function __construct(float ...$arrayNumber)

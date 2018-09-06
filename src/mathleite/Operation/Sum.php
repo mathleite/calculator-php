@@ -7,7 +7,7 @@
  */
 namespace App\mathleite\Operation;
 
-class Sum
+class Sum extends AbstractOperation
 {
 	private $arrayNumber;
 	public function __construct(float ...$arrayNumber)

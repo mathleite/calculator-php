@@ -9,7 +9,7 @@
 namespace App\mathleite\Operation;
 
 
-class Division
+class Division extends AbstractOperation
 {
 	private $arrayNumber;
 	public function __construct(float ...$arrayNumber)
