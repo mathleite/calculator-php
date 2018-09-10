@@ -6,10 +6,10 @@
  * Time: 9:59 AM
  */
 
-namespace App\mathleite;
+namespace App\mathleite\show;
 
 
-class ShowValues
+class ShowOperation
 {
 	private $sum;
 	private $subtraction;

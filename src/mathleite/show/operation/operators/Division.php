@@ -6,18 +6,19 @@
  * Time: 10:16 AM
  */
 
-namespace App\mathleite\Operation;
-
+namespace App\mathleite\show\operation\operators;
+use App\mathleite\show\operation\AbstractOperation;
 
 class Division extends AbstractOperation
 {
 	private $arrayNumber;
-	public function __construct(float ...$arrayNumber)
+	public function
+	__construct(float ...$arrayNumber)
 	{
 		$this->arrayNumber = $arrayNumber;
 	}
 
-	public function operation()
+	public function execute()
 	{
 		if(in_array(0, $this->arrayNumber)) {
 			return 'Error, division by 0';
