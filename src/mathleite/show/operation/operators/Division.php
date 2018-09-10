@@ -12,8 +12,7 @@ use App\mathleite\show\operation\AbstractOperator;
 class Division extends AbstractOperator
 {
 	private $arrayNumber;
-	public function
-	__construct(float ...$arrayNumber)
+	public function __construct(float ...$arrayNumber)
 	{
 		$this->arrayNumber = $arrayNumber;
 	}
