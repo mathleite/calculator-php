@@ -11,5 +11,5 @@ namespace App\mathleite\show\operation;
 
 interface OperationInterface
 {
-	public function doOperation();
+	public function doOperation(): ?float;
 }

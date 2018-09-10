@@ -16,7 +16,7 @@ class Sum extends AbstractOperator
 		$this->arrayNumber = $arrayNumber;
 	}
 
-	public function doOperation(): float
+	public function doOperation(): ?float
 	{
 		$number = array_shift($this->arrayNumber);
 		foreach ($this->arrayNumber as $value) {

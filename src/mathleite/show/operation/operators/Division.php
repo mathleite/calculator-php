@@ -18,10 +18,10 @@ class Division extends AbstractOperator
 		$this->arrayNumber = $arrayNumber;
 	}
 
-	public function doOperation()
+	public function doOperation(): ?float
 	{
 		if(in_array(0, $this->arrayNumber)) {
-			return 'Error, division by 0';
+			return null;
 		} else {
 			$number = array_shift($this->arrayNumber);
 			foreach ($this->arrayNumber as $value) {

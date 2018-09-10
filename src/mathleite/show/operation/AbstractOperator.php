@@ -9,5 +9,5 @@ namespace App\mathleite\show\operation;
 
 abstract class AbstractOperator implements OperationInterface
 {
-	abstract public function doOperation();
+	abstract public function doOperation(): ?float;
 }
