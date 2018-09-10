@@ -7,9 +7,9 @@
  */
 
 namespace App\mathleite\show\operation\operators;
-use App\mathleite\show\operation\AbstractOperation;
+use App\mathleite\show\operation\AbstractOperator;
 
-class Subtraction extends AbstractOperation
+class Subtraction extends AbstractOperator
 {
 	private $arrayNumber;
 	public function __construct(float ...$arrayNumber)
@@ -17,7 +17,7 @@ class Subtraction extends AbstractOperation
 		$this->arrayNumber = $arrayNumber;
 	}
 
-	public function execute(): float
+	public function doOperation(): float
 	{
 		$number = array_shift($this->arrayNumber);
 		foreach ($this->arrayNumber as $value) {

@@ -10,11 +10,11 @@ namespace App\mathleite;
 use App\mathleite\show\operation\OperationInterface;
 
 
-class DoOperation
+class Operation
 {
-	public function doOperation(OperationInterface $operation)
+	public function operation(OperationInterface $operation)
 	{
-		$execute = $operation->execute();
+		$execute = $operation->doOperation();
 		return $execute;
 	}
 }

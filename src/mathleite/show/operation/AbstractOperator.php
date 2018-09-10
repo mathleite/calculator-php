@@ -7,7 +7,7 @@
  */
 namespace App\mathleite\show\operation;
 
-abstract class AbstractOperation implements OperationInterface
+abstract class AbstractOperator implements OperationInterface
 {
-	abstract public function execute();
+	abstract public function doOperation();
 }

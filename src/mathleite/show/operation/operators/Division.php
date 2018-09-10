@@ -7,9 +7,9 @@
  */
 
 namespace App\mathleite\show\operation\operators;
-use App\mathleite\show\operation\AbstractOperation;
+use App\mathleite\show\operation\AbstractOperator;
 
-class Division extends AbstractOperation
+class Division extends AbstractOperator
 {
 	private $arrayNumber;
 	public function
@@ -18,7 +18,7 @@ class Division extends AbstractOperation
 		$this->arrayNumber = $arrayNumber;
 	}
 
-	public function execute()
+	public function doOperation()
 	{
 		if(in_array(0, $this->arrayNumber)) {
 			return 'Error, division by 0';

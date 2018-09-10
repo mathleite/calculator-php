@@ -7,20 +7,20 @@
  */
 require_once  __DIR__ . '/../vendor/autoload.php';
 
-$doOperation = new \App\mathleite\DoOperation();
+$doOperation = new \App\mathleite\Operation();
 
 $sum = new \App\mathleite\show\operation\operators\Sum(5.064, 1);
-$resultSum = $doOperation->doOperation($sum);
+$resultSum = $doOperation->operation($sum);
 
 $subtraction = new \App\mathleite\show\operation\operators\Subtraction(10, 4, 2);
-$resultSubtraction = $doOperation->doOperation($subtraction);
+$resultSubtraction = $doOperation->operation($subtraction);
 
 
 $division = new \App\mathleite\show\operation\operators\Division(87.15, 2, 0);
-$resultDivision = $doOperation->doOperation($division);
+$resultDivision = $doOperation->operation($division);
 
 $multiplication = new \App\mathleite\show\operation\operators\Multiplication(2.4, 2, 2, 2 );
-$resultMultiplication = $doOperation->doOperation($multiplication);
+$resultMultiplication = $doOperation->operation($multiplication);
 
 $showOperations = new \App\mathleite\show\ShowOperation($resultSum, $resultSubtraction, $resultDivision, $resultMultiplication);
 
